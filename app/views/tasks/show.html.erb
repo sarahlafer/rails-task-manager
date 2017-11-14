@@ -1,0 +1,7 @@
+<h1>My task</h1>
+<p><%= @task.content %></p>
+<p>This task was created on: <%= @task.created_at.to_date %></p>
+
+<%= link_to "Back", tasks_path %>
+<%= link_to "Edit Task", edit_task_path(@task) %>
+<%= link_to "Delete", task_path(@task), method: :delete %>

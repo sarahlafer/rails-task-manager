@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Task.create!(
+  content: "Laundry",
+  date_of_creation: Date.today
+  )
+
+Task.create!(
+  content: "Hoover",
+  date_of_creation: Date.yesterday
+  )
